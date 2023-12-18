@@ -1,5 +1,6 @@
 package com.teacomputers.task.trending.ui.search
 
+
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize

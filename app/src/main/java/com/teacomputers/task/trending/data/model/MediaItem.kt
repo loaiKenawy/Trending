@@ -2,17 +2,20 @@ package com.teacomputers.task.trending.data.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.google.gson.annotations.SerializedName
 
 @Entity(tableName = "Items")
 data class MediaItem(
     @PrimaryKey
     val id: Long,
     val backdrop_path: String,
+    @SerializedName(value="title", alternate= ["name"])
     val title: String,
     val overview: String,
     val poster_path: String,
     val genre_ids: Array<Int>,
     val popularity: Double,
+    @SerializedName(value="release_date", alternate= ["first_air_date"])
     val release_date: String,
     val vote_average: Double,
     val vote_count: Int,

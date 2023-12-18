@@ -14,6 +14,8 @@ class DataConverter {
 
     @TypeConverter
     fun stringToIntArray(string: String): Array<Int> {
-        return string.map { it.code }.toTypedArray()
+        val intArray =
+            string.split(",").map { it.toIntOrNull() ?: 0 }.toIntArray()
+        return intArray.toTypedArray()
     }
 }
