@@ -1,7 +1,7 @@
 # Trending
 - **Retrofit.**
 - **MVVM.**
-- **TMSB**
+- **TMDB**
 - **Rxjava**
 - **Room**
 - **Jetpack Compose**
